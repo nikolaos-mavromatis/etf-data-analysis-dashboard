@@ -25,6 +25,13 @@ The **goal** of this project is to analyze stock data (ticker: `SPY`) and create
 ### Get an Alpha Vantage API Key
 Sign up for a free API key at [Alpha Vantage](https://www.alphavantage.co/support/#api-key).
 
+### Run the Streamlit server
+From the root of the project, execute:
+
+```bash
+streamlit run src/app.py
+```
+
 <!-- TODO: Complete Makefile
 
 Complete this section as you go. Include the following in the `Makefile`:
