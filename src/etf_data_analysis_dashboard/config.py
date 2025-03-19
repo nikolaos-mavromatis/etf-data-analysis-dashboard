@@ -7,10 +7,11 @@ DATA_DIR = ROOT_DIR / "data"
 RAW_DATA_PATH = DATA_DIR / "raw"
 PROCESSED_DATA_PATH = DATA_DIR / "processed"
 
-SYMBOLS = ["SPY"]
+SYMBOL = "SPY"
+
 NUM_YEARS = 2
-END_DATE = datetime.datetime.now()
-START_DATE = END_DATE - datetime.timedelta(weeks=NUM_YEARS * 52)  # 5 years of data
+START_DATE = datetime.datetime(datetime.date.today().year - NUM_YEARS, 1, 1)
+END_DATE = datetime.date.today()
 
 
 if __name__ == "__main__":
