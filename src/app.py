@@ -37,11 +37,6 @@ filtered_data = data[
     & (data["date"] <= pd.to_datetime(end_date))
 ]
 
-# Display raw data
-if st.sidebar.checkbox("Show Raw Data"):
-    st.subheader("Raw Data")
-    st.write(filtered_data)
-
 # Plot 1: Closing Price Over Time
 st.subheader("How has the closing price of SPY changed over time?")
 fig1 = px.line(filtered_data, x="date", y="close", title="SPY Closing Price")
