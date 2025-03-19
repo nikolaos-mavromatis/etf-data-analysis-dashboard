@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# secrets
+.env
+
+# other
+.vscode/
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# data files
+/data/
